@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تهیه پیتزا</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/pizza.css">
+</head>
+<body onscroll="ChangeScrollY()">
+    <!-- Header -->
+    <header class="container header">
+        <div class="header-right">
+            <img src="../images/index/brand.png" alt="food delivery">
+        </div>
+        <div class="header-left">
+            <div class="header-item">
+                <span class="fa-stack header-item-icon">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-solid fa-location-dot fa-stack-1x fa-inverse"></i>
+                </span>
+                <a href="#" class="header-item-link">
+                    ملایر، خیابان شهدا
+                    <br>
+                    مجتمع صدف ، طبقه 3
+                </a>
+            </div>
+            <div class="header-item">
+                <span class="fa-stack header-item-icon">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-solid fa-phone fa-stack-1x fa-inverse"></i>
+                </span>
+                <a href="tel:+989123456789" target="_blank" class="header-item-link">
+                    989123456789+
+                    <br>
+                    شنبه تا پنجشنبه: 8 صبح - 10 شب
+                </a>
+            </div>
+            <div class="header-item">
+                <i class="fa-brands fa-instagram header-icon-link"></i>
+                <i class="fa-brands fa-facebook header-icon-link"></i>
+                <i class="fa-brands fa-twitter header-icon-link"></i>
+                <i class="fa-brands fa-linkedin header-icon-link"></i>
+            </div>
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Navbar -->
+    <nav class="container navbar">
+        <div class="navbar-right">
+            <ul>
+                <li><a href="../index.html" class="navbar-link">خانه</a></li>
+                <li><a href="#" class="navbar-link">منو</a></li>
+                <li><a href="#" class="navbar-link">جزئیات محصول</a></li>
+                <li><a href="./search.html" class="navbar-link">جستجو</a></li>
+                <li><a href="./register.html" class="navbar-link">عضویت</a></li>
+                <li><a href="./cart.html" class="navbar-link">سبد خرید</a></li>
+                <li><a href="#" class="navbar-link active">تهیه پیتزا</a></li>
+                <li><a href="#" class="navbar-link">درباره ما</a></li>
+            </ul>
+        </div>
+        <div class="navbar-left">
+            <a href="../pages/cart.html">
+                <i class="fa-solid fa-cart-shopping navbar-icon"></i>
+                <span class="cart-number"></span>
+            </a>
+        </div>
+
+    </nav>
+    <!-- End Navbar -->
+
+     <!-- pizza -->
+     <h1 class="pizza-title">پیتزای مورد علاقه خودت رو درست کن!</h1>
+     <div class="pizza-container">
+ 
+         <div class="calc-box">
+            <button class="button1" id="refresh-button">از نو بساز</button>
+             <div class="calc-item">
+ 
+                 <div>
+                     <h3>قیمت</h3>
+                     <span id="total-price">0</span> تومان
+                 </div>
+ 
+                 <div>
+                     <h3>میزان کالری</h3>
+                     <span id="total-calorie">0</span>کیلو کالری
+                 </div>
+             </div>
+             <button class="button1" id="cart-button">افزودن به سبد خرید</button>
+         </div>
+ 
+         <div id="main-box" class="main-box">
+             <div id="pizza-dough" ondrop="onDrop(event);" ondragover="allowDrop(event)">
+ 
+             </div>
+         </div>
+ 
+         <div class="item-box" id="item-box"></div>
+ 
+     </div>
+    <!-- End pizza -->
+    
+    <script src="../js/general.js"></script>
+    <script src="../js/pizza.js"></script>
+</body>
+</html>

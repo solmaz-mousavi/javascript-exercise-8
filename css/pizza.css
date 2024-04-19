@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "primary-font";
+  src: url("../fonts/farsi-fonts/iran-yekan-500.eot");
+  src: url("../fonts/farsi-fonts/iran-yekan-500.eot?#iefix") format("embedded-opentype"), url("../fonts/farsi-fonts/iran-yekan-500.woff2") format("woff2"), url("../fonts/farsi-fonts/iran-yekan-500.woff") format("woff"), url("../fonts/farsi-fonts/iran-yekan-500.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "secondary-font";
+  src: url("../fonts/farsi-fonts/pinar-700.eot");
+  src: url("../fonts/farsi-fonts/pinar-700.eot?#iefix") format("embedded-opentype"), url("../fonts/farsi-fonts/pinar-700.woff2") format("woff2"), url("../fonts/farsi-fonts/pinar-700.woff") format("woff"), url("../fonts/farsi-fonts/pinar-700.ttf") format("truetype");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 50px 0;
+}
+
+.section-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "secondary-font";
+}
+.section-text h3,
+.section-text h1 {
+  font-size: 5rem;
+}
+.section-text p {
+  font-family: "primary-font";
+  color: #9b9b9b;
+}
+
+.title {
+  position: relative;
+  top: -30px;
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/slider/home-slide-1.jpg);
+  background-size: cover;
+}
+.title .title-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "secondary-font";
+  height: 100%;
+  color: #fff;
+}
+.title .title-text h1 {
+  font-size: 5rem;
+}
+.title .title-text p {
+  font-size: 1.2rem;
+  font-family: "primary-font";
+}
+
+.number {
+  border: 1px solid rgb(211, 211, 214);
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+.number span {
+  cursor: pointer;
+}
+.number input {
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.button1 {
+  font-family: "primary-font";
+  color: #fff;
+  background-color: rgb(241, 97, 33);
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.button1:hover {
+  background-color: rgb(236, 182, 159);
+}
+
+.header-item-icon {
+  box-sizing: content-box;
+  width: 32px;
+  border: 5px solid rgb(211, 211, 214);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.header-icon-link {
+  color: rgb(211, 211, 214);
+  margin: 0 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.header-icon-link:hover {
+  color: rgb(241, 97, 33);
+}
+
+.navbar-icon {
+  color: rgb(43, 44, 47);
+  margin: 0 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.navbar-icon:hover {
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.header .header-left {
+  display: flex;
+}
+.header .header-left .header-item {
+  display: flex;
+  padding: 10px 20px;
+}
+.header .header-left .header-item .header-item-link {
+  text-decoration: none;
+  color: rgb(43, 44, 47);
+  font-family: "primary-font";
+}
+.header .header-left .header-item .header-item-link:hover {
+  color: rgb(241, 97, 33);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(241, 97, 33);
+  border-radius: 50px;
+  padding: 10px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.navbar .navbar-right ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+.navbar .navbar-right ul .navbar-link {
+  text-decoration: none;
+  padding: 3px 10px;
+  margin: 0 20px;
+  font-family: "primary-font";
+  color: #fff;
+}
+.navbar .navbar-right ul li .active {
+  background-color: rgb(236, 182, 159);
+}
+.navbar .navbar-left a {
+  text-decoration: none;
+}
+.navbar .navbar-left a span {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "primary-font";
+}
+
+.navbar-sticky {
+  width: 100%;
+  border-radius: 0px;
+  padding: 10px calc(12.5% + 50px);
+}
+
+*, body {
+  font-family: "primary-font", "segoe ui", "tahoma";
+}
+
+.pizza-title {
+  text-align: center;
+  color: green;
+  margin: 50px 10px 10px;
+}
+
+.pizza-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.pizza-container .item-box {
+  background: #f2f8f6;
+  width: 15%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  margin: 10px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.pizza-container .main-box {
+  width: 70%;
+  margin: 10px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pizza-container .main-box div {
+  position: relative;
+  background: url("../images/pizza-items/Pizza-Dough.png");
+  background-position: center center;
+  background-size: cover;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+}
+.pizza-container .calc-box {
+  width: 15%;
+  background: #f2f8f6;
+  margin: 10px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pizza-container .calc-box .calc-item {
+  margin: 5px;
+  text-align: center;
+}
+.pizza-container .calc-box .calc-item h3 {
+  margin: 10px 0px 0px;
+}
+.pizza-container .calc-box .calc-item div {
+  margin: 10px auto;
+  width: 75%;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pizza-container .calc-box .calc-item div span {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.img-box {
+  background: #fff;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+}
+
+.img-item {
+  width: 80px;
+  height: 80px;
+}/*# sourceMappingURL=pizza.css.map */
